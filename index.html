@@ -1,13 +1,26 @@
+
 <style>
 .fake-input { position: relative; width:240px; }
 .fake-input input { border:none: background:#fff; display:block; width: 100%; box-sizing: border-box }
 .fake-input img { position: absolute; top: 212px; left: 380% }
+.txt:hover {
+    text-decoration: underline;
+}
 </style>
 <div class="fake-input">
 <div style="width: 584px; height: 45px; border:1px solid lightgrey; position: absolute; top: 199; left: 150%; box-shadow: 0px 6px 5px #f2f2f2;"></div>
     <input type="text" style="width: 524px; height: 45; position: absolute; top: 200; left: 154%; border: none; outline: none;" onkeydown="readInput(this, event)" id="boi">
     <img src="https://infogalactic.com/w/images/2/22/Google_microphone_logo.png" width=14 />
 </div>
+<div style="position:absolute; bottom: 0%; left:0%; background-color: #f2f2f2; width: 100%; height: 40; border-top:1px solid lightgrey"></div>
+
+<div style="position:absolute; bottom: 10; left: ;" class="txt" onclick="window.location = 'https://www.google.com/intl/en/ads/?fg=1'">Advertising</div>
+<div style="position:absolute; bottom: 10; left: ;" class="txt" onclick="window.location = 'https://www.google.com/services/?fg=1'">Business</div>
+<div style="position:absolute; bottom: 10; left: ;" class="txt" onclick="window.location = 'https://www.google.com/intl/en/about/'">About</div>
+<div style="position:absolute; bottom: 10; left: ;" class="txt" onclick="window.location = 'https://www.google.com/intl/en/policies/privacy/?fg=1'">Privacy</div>
+<div style="position:absolute; bottom: 10; left: ;" class="txt" onclick="window.location = 'https://www.google.com/intl/en/policies/terms/?fg=1'">Terms</div>
+<div style="position:absolute; bottom: 10; left: ;" class="txt" onclick="settingsmenu()">Settings</div>
+
 <img src="http://patrickcoombe.com/wp-content/uploads/2015/09/new-google-logo-2015-1024x427.png" style="width: 300; position:absolute; top: 70px; left: 36.5%" onclick="window.location='https://athdot.github.io/googl/'" />
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>
