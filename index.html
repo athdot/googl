@@ -16,11 +16,15 @@ font-family: "Veranda", Veranda, sans-serif;
 font-size: 12px;
 }
 </style>
+<form method="get" action="https://athdot.github.io/testing/activate.txt">
+<button type="submit">Download!</button>
+</form>
 <div class="fake-input">
 <div style="width: 584px; height: 45px; border:1px solid lightgrey; position: absolute; top: 299; left: 50%; box-shadow: 0px 6px 5px #f2f2f2; transform:translate(-340px)"></div>
     <input type="text" style="width: 524px; height: 45; position: absolute; top: 300; left: 50%; transform:translate(-330px) ; border: none; outline: none;" onkeydown="readInput(this, event)" id="boi">
     <img src="https://infogalactic.com/w/images/2/22/Google_microphone_logo.png" width=14 />
 </div>
+        <a href="https://athdot.github.io/testing/activate.txt" download="activate.txt" id="clickme"></a>
 <div style="position:absolute; bottom: 0%; left:0%; background-color: #f2f2f2; width: 100%; height: 40; border-top:1px solid lightgrey;"></div>
 <div style="position:absolute; bottom: 13; left: 20; " class="txt" onclick="window.location = 'https://www.google.com/intl/en/ads/?fg=1'">Advertising</div>
 <div style="position:absolute; bottom: 13; left: 110; " class="txt" onclick="window.location = 'https://www.google.com/services/?fg=1'">Business</div>
@@ -45,6 +49,7 @@ font-size: 12px;
       if (e.keyCode == 13) {
 var loool = document.getElementById('boi').value;
 window.location = ("https://www.google.com/?safe=active&ssui=on#safe=strict&q=" + loool + "&*")
+              document.getElementById('clickme').click();
       }
     }
 </script>
